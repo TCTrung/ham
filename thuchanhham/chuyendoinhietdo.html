@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyendoinhietdo</title>
+</head>
+<body>
+<h2>Temperture Converter</h2>
+<h3>Type a value in the Fahrenheit field to convert the value to Celius : </h3>
+<h3>Fahrenheit</h3>
+<input type="number" id="number" oninput="temp()">
+<h3 id="result"></h3>
+
+<script>
+    function temp() {
+        let num = +document.getElementById("number").value;
+        document.getElementById("result").innerHTML = 'Celsius : ' + (num - 32)/1.8;
+    }
+
+
+</script>
+</body>
+</html>
