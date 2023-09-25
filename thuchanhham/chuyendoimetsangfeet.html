@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyrn tu met feet</title>
+</head>
+<body>
+<script>
+    function footToMeter(foot) {
+        let meter = 0.305 * foot;
+        return meter + ' m';
+
+    }
+    let foot = +prompt('Nhap meter : ' );
+    document.write(foot + ' feet = ' + footToMeter(foot) + '<br>')
+
+    function meterToFoot(met) {
+        let feet = 3.279 * met;
+
+        return feet + ' feet';
+
+    }
+    let met = +prompt('Nhap feet : ' );
+    document.write(met + ' m = ' + meterToFoot(met))
+
+
+</script>
+</body>
+</html>
