@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra ki tu</title>
+</head>
+<body>
+<script>
+    function init() {
+        let a = prompt("Nhap ky tu :");
+        let arr = ['a','b','c','d','e','f','e','c','b','j','a']
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (a === arr[i]) {
+                count++;
+            }
+        }
+
+        if (count === 0) {
+            document.write('-1');
+        }else {
+            document.write('ky tu '+ a + ' lap ' + count + ' lan');
+        }
+
+
+    }
+
+    init();
+
+</script>
+</body>
+</html>
