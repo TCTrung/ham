@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT5</title>
+</head>
+<body>
+<script>
+function star() {
+    let star = prompt('Nhap ten ngoi sao :');
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let arr3 = [];
+
+    let indexarr1 = 1;
+
+    for (let i = 0; i < arr1.length; i++) {
+        if (star === arr1[i]) {
+            indexarr1 = i;
+            break;
+        }
+    }
+    if (indexarr1 !== 1) {
+        arr3.push(arr2[indexarr1]);
+        document.write(arr3);
+    } else {
+        document.write('Khong tim thay sao nay');
+    }
+}
+    star();
+
+</script>
+</body>
+</html>
