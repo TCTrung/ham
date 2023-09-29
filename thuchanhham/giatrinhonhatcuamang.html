@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gia tri nho nhat</title>
+</head>
+<body>
+<h3>Tim gia tri nho nhat cua mang</h3>
+<script>
+
+   let arr = [3,5,1,8,-3,7,8];
+   let arr1 = [7,12,6,9,20,56,89];
+   let arr2 = [];
+   let arr3 = [0,0,0,0,0,0];
+   function minArray(arr) {
+       if(arr.length === 0) {
+           document.write('day la mang rong') ;
+       }else {
+           let min = 0;
+           let indexmin = 0;
+           for(let i = 1; i < arr.length; i++){
+               if(arr[i] < min){
+                   min = arr[i];
+                   indexmin = i;
+               }
+           }
+           document.write('Vi tri so nho nhat la ' + indexmin);
+       }
+
+
+
+   }
+   minArray(arr)
+
+</script>
+</body>
+</html>
